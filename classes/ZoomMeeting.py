@@ -4,7 +4,6 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 class ZoomMeeting:
-  
   def __init__(self):
     self.BRAVE_PATH = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
     self.DRIVER_PATH = "Drive Path"
