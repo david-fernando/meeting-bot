@@ -4,7 +4,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 class ZoomMeeting:
-
+  
   def __init__(self):
     self.BRAVE_PATH = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
     self.DRIVER_PATH = "Drive Path"
@@ -14,13 +14,11 @@ class ZoomMeeting:
     self.options.binary_location = self.BRAVE_PATH
     self.driver = webdriver.Chrome(executable_path=self.DRIVER_PATH, options=self.options)
 
-
   def open_zoom_metting_url(self):
     self.driver.get(self.ZOOM_METTING_URL)
 
   def open_zoom_metting_window(self):
     pyautogui.click(622, 236)
-      
 
   def insert_metting_password(self):
     pyautogui.click(638, 320)
